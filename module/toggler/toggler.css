@@ -1,0 +1,140 @@
+/*title*/
+
+.header-title, .show-info {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.header-title {
+  font-size: 18px;
+}
+
+.show-info {
+  color: #2196f3;
+  margin: 20px;
+  cursor: pointer;
+}
+
+/*info-search*/
+.info-search__wrapper {
+  margin-bottom: 32px;
+}
+
+.info-search__wrapper p {
+  line-height: 32px;
+}
+
+/*search-box*/
+
+.search-box {
+  display: inline-block;
+}
+
+.search-box input[type=text], button {
+  padding: 6px;
+  border-radius: 2px;
+  outline: none;
+}
+
+.search-box input[type=text] {
+  border: 1px solid #2196f3;
+}
+
+.search-box button {
+  border: none;
+  background-color: #2196f3;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #03a9f4;
+}
+
+.show-filter {
+  display: inline-block;
+  color: #2196f3;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 20px 60px;
+  cursor: pointer;
+}
+
+/*filter search*/
+.filter-search__content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+
+  -webkit-box-wrap: wrap;
+  -moz-box-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 20px auto 60px;
+}
+
+.filter-search__content div {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1 1 0.000000001px;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-flex-basis: 0.000000001px;
+  flex-basis: 0.000000001px;
+  margin: 2px;
+}
+
+.filter-search__content label {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  color: #2196F3;
+}
+
+.filter-search__content input {
+  padding: 6px;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid #2196F3;
+  width: 100%;
+  margin: 4px 0;
+}
+
+@media (max-width: 556px) {
+
+  .search-box__wrapper .search-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .search-box__wrapper .search-box input {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1 1 0.000000001px;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: 0.000000001px;
+    flex-basis: 0.000000001px;
+    margin-right: 4px;
+  }
+
+  .filter-search__content div {
+    min-width: 280px;
+  }
+
+  .show-filter {
+    margin: 20px 0 8px 0;
+  }
+}
+

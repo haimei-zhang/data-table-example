@@ -1,0 +1,9 @@
+.l-content {
+  margin: 20px 0;
+}
+
+@media (max-width: 830px) {
+  .l-content {
+    margin-top: 48px;
+  }
+}

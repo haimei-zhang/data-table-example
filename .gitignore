@@ -1,0 +1,15 @@
+syntax: glob
+
+# misc
+.DS_Store
+.env
+.tmp
+*.log
+
+# IntelliJ files
+.idea/
+*.iws
+
+# Version Control
+.git
+.hg

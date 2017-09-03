@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Purchase Orders</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <link rel="stylesheet" href="base/reset/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.10.15/r-2.1.1/datatables.min.css"/>
+  <link rel="stylesheet" href="base/common.css">
+  <link rel="stylesheet" href="layout/layout.css">
+  <link rel="stylesheet" href="module/toggler/toggler.css">
+  <link rel="stylesheet" href="module/custom-data-table/custom-data-table.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/v/dt/dt-1.10.15/r-2.1.1/datatables.min.js"></script>
+  <script src="module/toggler/toggler.js"></script>
+  <script src="module/custom-data-table/custom-data-table.js"></script>
+</head>
+<body>
+<div class="l-header">
+  <div class="header-tile_-wrapper">
+    <h3 class="header-title">My Networks</h3>
+    <div class="show-info" id="show-info" onclick="Toggler.toggle(event, '.info-search__wrapper')">
+      SHOW INFO <i class="fa fa-caret-down" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="info-search__wrapper hidden">
+    <p>Enter search parameters or just press the Search button to find all your purchase orders</p>
+  </div>
+  <div class="search-box__wrapper">
+    <div class="search-box">
+      <input type="text" id="overall-search">
+      <button id="search">Search</button>
+    </div>
+
+    <div class="show-filter" id="show-filter" onclick="Toggler.toggle(event, '.filter-search__wrapper')">
+      SHOW FILTERS <i class="fa fa-caret-down" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="filter-search__wrapper hidden">
+    <div class="filter-search__content">
+      <div><label for="s-status">Status</label><input type="text" id="s-status" placeholder="Type to filter"></div>
+      <div><label for="s-supplier">Supplier</label><input type="text" id="s-supplier" placeholder="Type to filter"></div>
+      <div><label for="s-business-unit">Business Unit</label><input type="text" id="s-business-unit" placeholder="Type to filter"></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="l-content">
+
+  <table id="purchase-table" class="cell-border hover" cellspacing="0">
+    <thead>
+    <tr>
+      <th>PO number</th>
+      <th nowrap>Date created</th>
+      <th>Status</th>
+      <th>Supplier</th>
+      <th nowrap>Business unit</th>
+      <th>Buyer</th>
+      <th>VAT</th>
+      <th>Total</th>
+    </tr>
+    </thead>
+  </table>
+
+</div>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-Please refer to https://haimei-zhang.github.io/data-table-example to view the result.
+Please refer to https://haimei-zhang.github.io/data-table-example/ to view the result.
 
 ## Ajax API Data
 This project needs to be served as a static server in order to read the data (The example data is contained in a json file).

@@ -101,6 +101,7 @@ function CustomDataTable() {
     $("#overall-search").on("keyup", function (e) {
       if (e.which === 13) {
         searchAll();
+        $(".filter-search__content input").val("");
       }
     })
   };
